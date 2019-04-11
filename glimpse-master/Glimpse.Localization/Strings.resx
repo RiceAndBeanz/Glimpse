@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CardViewModel.Progress" xml:space="preserve">
+    <value>Loading Promotions</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.ChangeDateMsg" xml:space="preserve">
+    <value>Change Date</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.ChooseAdditionalPicMsg" xml:space="preserve">
+    <value>Choose your additional pictures! (optional)</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.ChoosePicMsg" xml:space="preserve">
+    <value>Choose your cover picture!</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.CreatePromoBtn" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.EndDateMsg" xml:space="preserve">
+    <value>Promotion End Date: </value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.ErrorMissingField" xml:space="preserve">
+    <value>Missing Required Field</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.Progress" xml:space="preserve">
+    <value>Creating Promotion...</value>
+  </data>
+  <data name="CreatePromotionPart2ViewModel.StartDateMsg" xml:space="preserve">
+    <value>Promotion Start Date:</value>
+  </data>
+  <data name="CreatePromotionViewModel.ApparelRadio" xml:space="preserve">
+    <value>Apparel</value>
+  </data>
+  <data name="CreatePromotionViewModel.CategoriesMsg" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="CreatePromotionViewModel.ContinueBtn" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CreatePromotionViewModel.DescriptionHint" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CreatePromotionViewModel.ElectronicsRadio" xml:space="preserve">
+    <value>Electronics</value>
+  </data>
+  <data name="CreatePromotionViewModel.ErrorMissingField" xml:space="preserve">
+    <value>Missing Required Field</value>
+  </data>
+  <data name="CreatePromotionViewModel.FootwearRadio" xml:space="preserve">
+    <value>Footwear</value>
+  </data>
+  <data name="CreatePromotionViewModel.JewelleryRadio" xml:space="preserve">
+    <value>Jewellery</value>
+  </data>
+  <data name="CreatePromotionViewModel.RestaurantsRadio" xml:space="preserve">
+    <value>Restaurants</value>
+  </data>
+  <data name="CreatePromotionViewModel.ServicesRadio" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="CreatePromotionViewModel.TitleHint" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="LikedPromotionsViewModel.LikedDeals" xml:space="preserve">
+    <value>My Liked Deals</value>
+  </data>
+  <data name="LikedPromotionsViewModel.SeeMap" xml:space="preserve">
+    <value>See Map</value>
+  </data>
+  <data name="LoginSettingsViewModel.AboutContentMsg" xml:space="preserve">
+    <value>About Content</value>
+  </data>
+  <data name="LoginSettingsViewModel.SelectLanguageMsg" xml:space="preserve">
+    <value>Select the language for the app</value>
+  </data>
+  <data name="LoginViewModel.MerchantLabel" xml:space="preserve">
+    <value>MERCHANTS</value>
+  </data>
+  <data name="LoginViewModel.NoAccountMsg" xml:space="preserve">
+    <value>Don't have an account yet?</value>
+  </data>
+  <data name="LoginViewModel.OrMsg" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="LoginViewModel.SignInButton" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="LoginViewModel.TakeAGlimpse" xml:space="preserve">
+    <value>Take A Glimpse</value>
+  </data>
+  <data name="LoginViewModel.VendorSignUpButton" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="LoginViewModel.WelcomeMsg" xml:space="preserve">
+    <value>Welcome To Glimpse</value>
+  </data>
+  <data name="LoginViewModel.WelcomeMsgInstructions" xml:space="preserve">
+    <value>Tap below to Glimpse Nearby Deals!</value>
+  </data>
+  <data name="MenuViewModel.Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MenuViewModel.Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="MenuViewModel.Promotions" xml:space="preserve">
+    <value>Promotions</value>
+  </data>
+  <data name="MenuViewModel.Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="PromoDetailsViewModel.AboutThisDeal" xml:space="preserve">
+    <value>About this deal</value>
+  </data>
+  <data name="PromoDetailsViewModel.Bought" xml:space="preserve">
+    <value>+ Bought</value>
+  </data>
+  <data name="PromoDetailsViewModel.Progress" xml:space="preserve">
+    <value>Loading Images</value>
+  </data>
+  <data name="SettingsViewModel.AboutContentMsg" xml:space="preserve">
+    <value>About Content</value>
+  </data>
+  <data name="SettingsViewModel.SelectLanguageMsg" xml:space="preserve">
+    <value>Select the language for the app</value>
+  </data>
+  <data name="SignInViewModel.EmailHint" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="SignInViewModel.ForgotPasswordMsg" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="SignInViewModel.IncorrectInputMsg" xml:space="preserve">
+    <value>Incorrect email or password.</value>
+  </data>
+  <data name="SignInViewModel.MissingField" xml:space="preserve">
+    <value>Missing required field.</value>
+  </data>
+  <data name="SignInViewModel.PasswordHint" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SignInViewModel.Progress" xml:space="preserve">
+    <value>Authenticating...</value>
+  </data>
+  <data name="SignInViewModel.SignInButton" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="VendorProfilePageViewModel.MyPromotions" xml:space="preserve">
+    <value>My Promotions</value>
+  </data>
+  <data name="VendorSignUpViewModel.BusinessPhoneNumberHint" xml:space="preserve">
+    <value>Business Phone Number</value>
+  </data>
+  <data name="VendorSignUpViewModel.CompanyHint" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="VendorSignUpViewModel.ConfirmPasswordHint" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="VendorSignUpViewModel.EmailHint" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="VendorSignUpViewModel.ErrorEmailExistsMsg" xml:space="preserve">
+    <value>is already being used</value>
+  </data>
+  <data name="VendorSignUpViewModel.ErrorEmailIsNotValidMsg" xml:space="preserve">
+    <value>Email is not valid</value>
+  </data>
+  <data name="VendorSignUpViewModel.ErrorMissingFieldMsg" xml:space="preserve">
+    <value>Missing required field</value>
+  </data>
+  <data name="VendorSignUpViewModel.ErrorPasswordMatchMsg" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+  <data name="VendorSignUpViewModel.LocationButton" xml:space="preserve">
+    <value>Choose a Location</value>
+  </data>
+  <data name="VendorSignUpViewModel.PasswordHint" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="VendorSignUpViewModel.Progress" xml:space="preserve">
+    <value>Sign up in progress...</value>
+  </data>
+  <data name="VendorSignUpViewModel.SignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+</root>

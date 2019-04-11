@@ -1,0 +1,68 @@
+<div class="animated fadeIn">
+    <div class="promotion-border col-sm-12 padding-zero">
+        <div class="col-sm-12" style="height:625px; margin-bottom:50px;">
+            <div class="col-sm-12 cover-picture-city">
+                <div class="col-sm-12" style="margin-top:120px;">
+                    <div class="col-sm-12">
+                        <h1 style="text-align:center; font-weight: 300; color:white;">Looking for a deal today?</h1>
+                    </div>
+                    <div class="col-sm-12" style="margin-top:50px;">
+                        <p style="margin-bottom: 20px; font-size: 20px; font-weight: 300; line-height: 1.4; color:white; text-align:center;">Find by title or select a category</p>
+                    </div>
+                    <div class="container">
+                        <div class="col-sm-8 offset-sm-2" style="border-radius: 6px; background: #fff; margin-top:40px; padding:33px;">
+                            <div class="">
+                                <div class="col-sm-3">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle my-dropdown col-sm-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="white-space: nowrap; overflow: hidden !important; text-overflow: ellipsis; padding-right:15px !important; padding-left:15px !important;">
+                                        Categories
+                                    </button>
+                                    <div class="dropdown-menu col-sm-12" style="left:auto !important; width:90%; border-color:#2FD4AD !important;">
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = ''">All</a>
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = 0">Footwear</a>
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = 1">Electronics</a>
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = 2">Jewellery</a>
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = 3">Restaurants</a>
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = 4">Services</a>
+                                        <a class="dropdown-item my-dp-item" ng-click="selectVal = 5">Apparel</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9" style="padding-left:0px;">
+                                    <input class="search-categories col-sm-12" type="text" ng-model="searchPromotionText" placeholder="Search" style="height:50px; width:100%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12 promotion-list promotion-table">
+            <div class="col-sm-12 padding-zero promotion-background">
+                <div class="col-sm-3 promotion-height animation" ng-click="showImage(promotion)" ng-repeat="(key, promotion) in promotions | reverse | filter:searchPromotionText | filter:{Category: selectVal}" ng-animate="'animate'">
+                    <div class="col-sm-12 padding-zero bkg-default promotion-height2">
+                        <div class="col-sm-12 label-categories" ng-switch={{promotion.Category}}>
+                            <span class="label label-footwear pull-right" ng-switch-when=0>Footwear</span>
+                            <span class="label label-electronics pull-right" ng-switch-when=1>Electronics</span>
+                            <span class="label label-jewellery pull-right" ng-switch-when=2>Jewellery</span>
+                            <span class="label label-restaurants pull-right" ng-switch-when=3>Restaurants</span>
+                            <span class="label label-services pull-right" ng-switch-when=4>Services</span>
+                            <span class="label label-apparel pull-right" ng-switch-when=5>Apparel</span>
+                        </div>
+                        <div class="col-sm-10 offset-sm-1 promotion-image">
+                            <img class="col-sm-12 img-middle padding-zero" ng-show="!!promotion.PromotionImageURL" ng-src="https://glimpseimages.blob.core.windows.net/imagestorage/{{promotion.PromotionImageURL}}" ng-click="openImg()">
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="col-sm-12 padding-zero promotion-title">
+                                <div style="white-space: nowrap; overflow: hidden !important; text-overflow: ellipsis">{{promotion.Title}}</div>
+                            </div>
+                            <div class="col-sm-12 padding-zero promotion-value">
+                                {{promotion.Description}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="300dp"
+    android:minHeight="400dp"
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/glimpse_splash"
+        android:id="@+id/singIn_glimpse_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/ErrorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        local:MvxBind="Text ErrorMessage, Mode=TwoWay" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/txtEmail"
+            local:MvxLang="Hint EmailHint"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="10dp"
+            android:textColor="#707070"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            local:MvxBind="Text Email, Mode=TwoWay" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText
+            android:id="@+id/txtPassword"
+            local:MvxLang="Hint PasswordHint"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="10dp"
+            android:textColor="#707070"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            local:MvxBind="Text Password, Mode=TwoWay" />
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="12dp"
+            local:MvxLang="Text SignInButton"
+            android:layout_centerInParent="true"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            local:MvxBind="Click SignInCommand"
+            android:textColor="@color/glimpseWhite"
+            android:background="@drawable/rounded_shape_button_v2"
+            android:layout_width="wrap_content"
+            android:minWidth="100dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        local:MvxLang="Text ForgotPasswordMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#a0a0a0" />
+</LinearLayout>

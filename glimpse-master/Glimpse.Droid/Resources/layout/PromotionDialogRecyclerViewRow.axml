@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:background="#E2E2E2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/promotionImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plus"
+            android:layout_marginTop="35dp"
+            android:paddingTop="6dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCompanyName"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:padding="6dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:textColor="#000"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:layout_below="@id/promotionImage"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDescription"
+            android:textColor="#000"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginBottom="2dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtExpiration"
+            android:textColor="#000"
+            android:padding="6dp"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:layout_below="@id/txtDescription"
+            android:layout_marginBottom="2dp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

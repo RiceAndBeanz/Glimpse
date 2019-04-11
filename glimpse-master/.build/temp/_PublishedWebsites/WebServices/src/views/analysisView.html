@@ -1,0 +1,61 @@
+﻿<div class="signup-form-padding animated fadeIn">
+    <div class="container profile-form col-sm-10 offset-sm-1">
+        <h2 class="profile-title">- Analytics -</h2>
+        <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Title</th>
+                    <th>Total number of views</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="promotion in promotions | reverse">
+                <tr>
+                    <td>{{promotion.Title}}</td>
+                    <td>{{promotion.clicks}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="panel panel-default signup-form-panel" ng-hide="noPromotionClicked">
+            <div class="panel-body promotion-background">
+                <div class="col-sm-12">
+                    <div class="col-sm-12 chart-padding">
+                        <div class="col-sm-6">
+                            <div class="col-sm-12 analysis-description">Number of views during the past few days</div>
+                            <canvas id="line" class="chart chart-line" chart-data="data"
+                                    chart-labels="labels" chart-series="seriesTitle" chart-options="chartLineDatesOptions"
+                                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+                            <div class="col-sm-12 analysis-description">
+                                Days of the month
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-sm-12 analysis-description">Number of views based on the day of the week</div>
+                            <canvas id="line" class="chart chart-line" chart-data="dataDays"
+                                    chart-labels="labelDays" chart-series="seriesTitle" chart-options="chartLineDaysOptions"
+                                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+                            <div class="col-sm-12 analysis-description">
+                                Day of the week
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
+                            <div class="col-sm-12 analysis-description">Wondering at what time is your promotion viewed the most?</div>
+                            <canvas id="line" class="chart chart-line" chart-data="dataHours"
+                                    chart-labels="labelHours" chart-series="seriesTitle" chart-options="chartLineDaysOptions"
+                                    chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+                            <div class="col-sm-12 analysis-description">
+                                Time of the day
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ng-show="noPromotionClicked">
+            <div class="alert alert-warning text-center" role="alert">
+                <strong>Sorry!</strong> You do not have any promotions or No one clicked on your promotion yet.. Give it a little time!
+            </div>
+        </div>
+    </div>
+</div>

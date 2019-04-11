@@ -1,0 +1,14 @@
+﻿<div class="container slider">
+    <img ng-repeat="slide in images" class="slide slide-animation nonDraggableImage sliderSize" ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()" ng-hide="!isCurrentSlideIndex($index)" ng-src="https://glimpseimages.blob.core.windows.net/imagestorage/{{slide}}">
+    <a class="arrow prev" href="javascript:void(0)" ng-click="nextSlide()"></a>
+    <a class="arrow next" href="javascript:void(0)" ng-click="prevSlide()"></a>
+    <nav class="sliderNav">
+        <div class="wrapper">
+            <ul class="dots">
+                <li class="dot" ng-repeat="slide in images">
+                    <a ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>

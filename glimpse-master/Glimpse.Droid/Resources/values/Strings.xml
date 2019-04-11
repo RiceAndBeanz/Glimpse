@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">Glimpse</string>
+  <string name="GoogleKey">AIzaSyCtA2ny60f7ohQNjKn46CgQcocnnlkjet0</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+</resources>

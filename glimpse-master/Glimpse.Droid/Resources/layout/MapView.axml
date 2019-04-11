@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/extraLightGray">
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        local:MvxBind="Query Query"
+        android:id="@+id/map_searchview" />
+    <MvxRadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:id="@+id/mapfilter_radiogroup"
+        local:MvxItemTemplate="@layout/item_radio"
+        local:MvxBind="ItemsSource Categories;SelectedItem SelectedItem" />
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map" />
+</LinearLayout>

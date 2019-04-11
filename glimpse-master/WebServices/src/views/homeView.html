@@ -1,0 +1,35 @@
+<nav class="navbar bg-faded nav-bar">
+    <div class="container">
+        <div class="col-sm-12" style="padding: 0.92857143em;">
+            <a class="navbar-brand nav-section" ui-sref=".viewPromotion">
+                <div class="landing-pic" style="width: 71px; height: 70px; margin-top:0px; margin-top: 0px; top: 15px;"></div>
+            </a>
+            <ul class="nav navbar-nav" style="padding-top: 10px;">
+
+                <li class="nav-item float-xs-right">
+                    <div class="nav-link nav-section" src="" ng-click="logout()">Logout</div>
+                </li>
+                <li class="nav-item float-xs-right">
+                    <div class="nav-link nav-section" ui-sref=".profile">Profile</div>
+                </li>
+                <li class="nav-item float-xs-right">
+                    <div class="nav-link nav-section" ui-sref=".analysis">Analytics</div>
+                </li>
+                <li class="nav-item float-xs-right">
+                    <div class="nav-link nav-section" ui-sref=".mypromotions">My Promotions</div>
+                </li>
+                <li class="nav-item float-xs-right">
+                    <div id="map" class="nav-link nav-section" ui-sref=".map">Map</div>
+                </li>
+                <li class="nav-item float-xs-right">
+                    <div id="google_translate_element"></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="">
+    <div ui-view></div>
+</div>

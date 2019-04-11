@@ -1,0 +1,77 @@
+
+<div class="animated fadeIn">
+
+    <div class="promotion-border col-sm-3">
+        <div class="col-sm-12 promotion-list promotion-table">
+
+            <div class="col-sm-12"></div>
+            <div class="col-sm-12 search-div">
+                <input class="col-sm-12 search-categories" type="text" ng-model="searchPromotionText" placeholder="Search">
+            </div>
+            <div class="col-sm-12 filter-label">
+                Filter Promotions by Categories 
+                <div class="btn-group btn-group-vertical col-sm-12" >
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='footwear' value="0" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">Footwear</span>
+                    </label>
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='electronics' value="1" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">Electronics</span>
+                    </label>
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='jewellery' value="2" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">Jewellery</span>
+                    </label>
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='restaurants' value="3" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">Restaurants</span>
+                    </label>
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='services' value="4" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">Services</span>
+                    </label>
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='apparel' value="5" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">Apparel</span>
+                    </label>
+                    <label class="btn text-align-init padding-zero">
+                        <input class="categories-radio-button" type="radio" name='all' value="" ng-model="selectVal"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span class="categories-size">All</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="promotion-border col-sm-9">
+        <div class="col-sm-12 promotion-list promotion-table">
+            
+
+            <div class="col-sm-12 signature"></div>
+
+            <div class="col-sm-12 padding-zero promotion-background">
+                    <div class="col-sm-12 padding-zero promotion-height" ng-click="showImage(promotion)" ng-repeat="(key, promotion) in promotions | reverse | filter:searchPromotionText | filter:{Category: selectVal}">
+                        <div class="col-sm-12 padding-zero">
+                            <div class="col-sm-4 promotion-image"><img class="col-sm-12 img-middle padding-zero" ng-show="!!promotion.PromotionImageURL" ng-src="https://glimpseimages.blob.core.windows.net/imagestorage/{{promotion.PromotionImageURL}}" ng-click="openImg()"></div>
+
+                            <div class="col-sm-8">
+                                <div class="col-sm-12 padding-zero promotion-title">
+                                    {{promotion.Title}}
+                                </div>
+                                <div class="col-sm-6 promotion-value">
+                                    {{promotion.Description}}
+                                </div>
+                                <div class="col-sm-6 padding-zero promotion-value" ng-switch={{promotion.Category}}>
+                                    <div ng-switch-when=0>Footwear</div>
+                                    <div ng-switch-when=1>Electronics</div>
+                                    <div ng-switch-when=2>Jewellery</div>
+                                    <div ng-switch-when=3>Restaurants</div>
+                                    <div ng-switch-when=4>Services</div>
+                                    <div ng-switch-when=5>Apparel</div>
+                                </div>
+
+
+                                <div class="col-sm-6 padding-zero promotion-value">Start : {{promotion.PromotionStartDate | date : "fullDate"}}</div>
+                                <div class="col-sm-6 padding-zero promotion-value">End : {{promotion.PromotionEndDate | date : "fullDate"}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</div>

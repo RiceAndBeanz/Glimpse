@@ -1,0 +1,66 @@
+<div class="signup-form-padding animated fadeIn">
+    <div class="container signup-form col-sm-8 offset-sm-2">
+        <h2 class="login-title">- Sign Up -</h2>
+        <div class="panel panel-default signup-form-panel col-sm-10 offset-sm-1">
+            <div class="panel-body">
+                <form name="userForm" novalidate>
+                    <div class="input-group login-userinput col-sm-12">
+                        <span class="fa fa-user fa-2x icon-signup"></span>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Company" name="company"  ng-model="user.company" ng-class="{ 'input-has-error' : userForm.company.$invalid && !userForm.company.$pristine}" required>
+                        </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="email" class="signup-form-input" placeholder="Email" name="email"  ng-model="user.email" ng-class="{ 'input-has-error' : userForm.email.$invalid && !userForm.email.$pristine}" required>
+                        </div>
+                    </div>
+                    <div class="input-group login-userinput col-sm-12">
+                        <span class="fa fa-lock fa-2x icon-signup"></span>
+                        <div class="input-form-padding col-sm-12" ng-class="{ 'has-danger' : userForm.$invalid}">
+                            <input id="txtPassword" type="password" class="signup-form-input" placeholder="Password"  name="password"  ng-model="user.password" ng-minlength="5" ng-class="{ 'input-has-error' : userForm.password.$invalid && !userForm.password.$pristine}" required>
+                            <p ng-show="userForm.password.$error.minlength" class="form-control-feedback">Password is too short.</p>
+                        </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtPassword" type="password" class="signup-form-input" placeholder="Confirm Password"  name="confirmpassword"  ng-model="user.confirmpassword" ng-minlength="5" ng-class="{ 'input-has-error' : userForm.confirmpassword.$invalid && !userForm.confirmpassword.$pristine}" required>
+                        </div>
+                    </div>
+                    <div class="input-group login-userinput col-sm-12">
+                        <span class="fa fa-map-marker fa-2x icon-signup"></span>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Country" name="country"  ng-model="user.country" pattern="[a-zA-Z]+" ng-pattern-restric ng-class="{ 'input-has-error' : userForm.country.$invalid && !userForm.country.$pristine}" required>
+                        </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Province" name="province"  ng-model="user.province" pattern="[a-zA-Z]+" ng-pattern-restric ng-class="{ 'input-has-error' : userForm.province.$invalid && !userForm.province.$pristine}" required>
+                        </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="City" name="city"  ng-model="user.city" pattern="[a-zA-Z]+" ng-pattern-restric ng-class="{ 'input-has-error' : userForm.city.$invalid && !userForm.city.$pristine}" required>
+                            </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Postal Code" name="postal"  ng-model="user.postal" required ng-class="{ 'input-has-error' : userForm.postal.$invalid && !userForm.postal.$pristine}">
+                            </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Street Name" name="streetname"  ng-model="user.streetname"  ng-class="{ 'input-has-error' : userForm.streetname.$invalid && !userForm.streetname.$pristine}" required>
+                            </div>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Street Number" name="streetnumber"  ng-model="user.streetnumber" ng-class="{ 'input-has-error' : userForm.streetnumber.$invalid && !userForm.streetnumber.$pristine}" required>
+                        </div>
+                    </div>
+                    <div class="input-group login-userinput col-sm-12">
+                        <span class="fa fa-phone fa-2x icon-signup"></span>
+                        <div class="input-form-padding col-sm-12">
+                            <input id="txtUser" type="text" class="signup-form-input" placeholder="Personal Phone Number"name="personalphone"  ng-model="user.personalphone" pattern="[0-9]+" ng-pattern-restric ng-minlength="7" ng-class="{ 'input-has-error' : userForm.personalphone.$invalid && !userForm.personalphone.$pristine}" required>
+                        </div>
+                        <div class="signup-form-btn col-sm-12" ng-class="{ 'has-danger' : userForm.$invalid}">
+                            <button id="signupBtn" class="btn btn-primary btn-block login-button" ng-disabled="userForm.$invalid" ng-click="validateAddress()">Sign Up</button>
+                            <p ng-show="userForm.$invalid" class="form-control-feedback">Some fields are missing</p>
+                            <p ng-show="passConfirmation" class="error-warning">Password confirmation does not match Password</p>
+                            <p ng-hide="addressIsValid" class="error-warning">The Address entered is invalid</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <a ui-sref="login" class="login-forgot">Back to login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

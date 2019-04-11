@@ -1,0 +1,49 @@
+﻿<div class="signup-form-padding animated fadeIn">
+    <div class="container profile-form col-sm-10 offset-sm-1">
+        <h2 class="profile-title">- Profile -</h2>
+        <div class="panel panel-default signup-form-panel">
+            <div class="panel-body">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <div class="col-sm-4">
+                                <h3 class="profile-company">{{company}}</h3>
+                            </div>
+                            <button type="submit" class="btn btn-primary pull-right" ng-click="edit()" ng-hide="editOn">Edit</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-xs-2 profile-label">Email</label>
+                        <div class="col-xs-10">
+                            <input class="form-control" type="text" value="Glimpse@glimpse.com" ng-model="email" ng-show="editOn">
+                            <p ng-hide="editOn">{{email}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-search-input" class="col-xs-2 profile-label">Company Name</label>
+                        <div class="col-xs-10">
+                            <input class="form-control" type="text" ng-model="company" readonly="readonly" ng-show="editOn">
+                            <p ng-hide="editOn">{{company}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-xs-2 profile-label">Address</label>
+                        <div class="col-xs-10">
+                            <input class="form-control" type="text" ng-model="address" ng-show="editOn">
+                            <p ng-hide="editOn">{{address}}</p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-date-input" class="col-xs-2 profile-label">Telephone</label>
+                        <div class="col-xs-10">
+                            <input class="form-control" type="text" ng-model="tel" ng-show="editOn">
+                            <p ng-hide="editOn">{{tel}}</p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success pull-right" ng-click="save()" ng-show="editOn">Save</button>
+                    <button type="submit" class="btn btn-danger pull-right" ng-click="edit()" ng-show="editOn">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

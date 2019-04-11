@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="androidswipeablecardstack">
+  <name>AndroidSwipeableCardStack</name>
+  <publisher>Kuzyasun</publisher>
+  <publisher-url>https://github.com/kuzyasun/XamarinAndroidSwipeableCardStack</publisher-url>
+  <version>1.0.1</version>
+  <summary>A tinder like swipeable card stack component. Provide "swipe to like" effects. Easy to customize card views.</summary>
+  <screenshots>
+    <img src="screenshots/anim.gif" title="anim" />
+    <img src="screenshots/screen_1.png" title="screen_1" />
+    <img src="screenshots/screen_2.png" title="screen_2" />
+    <img src="screenshots/screen_3.png" title="screen_3" />
+  </screenshots>
+  <samples>
+    <sample id="SwipeableCardStackDemoApp">
+      <name>Android Sample</name>
+      <summary>Android Sample</summary>
+    </sample>
+  </samples>
+</component>

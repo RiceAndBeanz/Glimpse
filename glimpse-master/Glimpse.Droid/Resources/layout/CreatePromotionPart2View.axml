@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ErrorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            local:MvxBind="Text ErrorMessage, Mode=TwoWay" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+            <TextView
+                android:id="@+id/txtStartPromotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                local:MvxLang="Text StartDateMsg" />
+            <TextView
+                android:id="@+id/start_date_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                local:MvxBind="Text PromotionStartDate,Converter=DateTime,Mode=OneWayToSource" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnChangeStartDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:layout_centerInParent="true"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:textColor="@color/glimpseWhite"
+            android:background="@drawable/rounded_shape_button_v2"
+            android:minWidth="100dp"
+            local:MvxLang="Text ChangeDateMsg" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+            <TextView
+                android:id="@+id/txtEndPromotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                local:MvxLang="Text EndDateMsg" />
+            <TextView
+                android:id="@+id/end_date_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                local:MvxBind="Text PromotionEndDate,Converter=DateTime,Mode=OneWayToSource" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnChangeEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:layout_centerInParent="true"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:textColor="@color/glimpseWhite"
+            android:background="@drawable/rounded_shape_button_v2"
+            android:minWidth="100dp"
+            local:MvxLang="Text ChangeDateMsg" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+            <TextView
+              android:id="@+id/createPromoChoosePic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                local:MvxLang="Text ChoosePicMsg" />
+          
+            <Mvx.MvxImageView
+                android:src="@drawable/plus"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                 android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/promotion_cover"
+                local:MvxBind="Image Bytes,Converter=InMemoryImage" />
+            <TextView
+               android:id="@+id/createPromoChooseAdditionalPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="20dp"
+                local:MvxLang="Text ChooseAdditionalPicMsg" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:background="@android:color/white">
+                <Mvx.MvxImageView
+                    android:src="@drawable/plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/promotion_picture1"
+                    local:MvxBind="Image Bytes,Converter=InMemoryImage" />
+                <Mvx.MvxImageView
+                    android:src="@drawable/plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/promotion_picture2"
+                    local:MvxBind="Image Bytes,Converter=InMemoryImage" />
+                <Mvx.MvxImageView
+                    android:src="@drawable/plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/promotion_picture3"
+                    local:MvxBind="Image Bytes,Converter=InMemoryImage" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_weight="40"
+            android:layout_width="wrap_content"
+            android:weightSum="50" />
+        <Button
+            local:MvxLang="Text CreatePromoBtn"
+            android:id="@+id/ContinuePart2Button"
+            local:MvxBind="Click createPromotion"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_shape_button_v2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp" />
+    </LinearLayout>
+</ScrollView>

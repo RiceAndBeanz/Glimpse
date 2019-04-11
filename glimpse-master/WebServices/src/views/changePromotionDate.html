@@ -1,0 +1,37 @@
+﻿<div class="animated fadeIn">
+    <div class="modal-content">
+        <div class="modal-header my-modal-header">
+            <h3 class="modal-title" id="modal-title">Re-Post Promotion</h3>
+        </div>
+        <div class="modal-body ng-scope" id="modal-body">
+            <form>
+                <label>Promotion Duration</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sdt" is-open="startDate.opened" datepicker-options="startDateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="openStartDate()"><i class="fa fa-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="edt" is-open="endDate.opened" datepicker-options="endDateOptions" ng-required="true" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="openEndDate()"><i class="fa fa-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="alert alert-warning" role="alert" ng-show="showDateWarning">
+            <strong>Warning!</strong> Start date cannot start before the end date. <a ng-click="closeWarning()">Close</a>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" type="button" ng-click="cancel()">Cancel</button>
+            <button class="btn btn-primary" type="button" ng-click="done()">Change</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+﻿<div class="signup-form-padding animated fadeIn">
+    <div class="container profile-form col-sm-10 offset-sm-1">
+        <h2 class="profile-title">- Promotions -</h2>
+        <div class="panel panel-default signup-form-panel">
+            <div class="panel-body">
+                
+                <table class="table">
+                    <thead class="thead-inverse">
+                        <tr>
+                            <th>Title</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Status</th>
+                            <th><button ng-click="showCreatePromotion()" class="btn btn-success pull-right">New Promotion</button></th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="promotion in mypromotions | reverse">
+                        <tr>
+                            <td>{{promotion.Title}}</td>
+                            <td>{{promotion.PromotionStartDate  | date : "fullDate"}}</td>
+                            <td>{{promotion.PromotionEndDate  | date : "fullDate"}}</td>
+                            <td><span ng-show="isPromotionExpired(promotion.PromotionEndDate)">Expired</span><span ng-hide="isPromotionExpired(promotion.PromotionEndDate)">Ongoing</span></td>
+                            <th><button type="button" class="btn btn-success" ng-click="editPromotion(promotion)">Edit</button>
+                                <button type="button" class="btn btn-danger" ng-click="deletePromotion(promotion, mypromotions.indexOf(promotion))">Delete</button>
+                                <button ng-show="isPromotionExpired(promotion.PromotionEndDate)" type="button" class="btn btn-info" ng-click="editPromotionDate(promotion)">Repost</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>

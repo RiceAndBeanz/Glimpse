@@ -1,0 +1,229 @@
+<div class="animated fadeIn">
+    <div class="modal-content">
+        <!--<div class="modal-header">
+            <h3 class="modal-title" id="modal-title">{{ edit == true ? ' Modify Promotion' : 'Create Promotion'}}</h3>
+
+        </div>-->
+        <div class="col-sm-12 form-top">
+            <div class="col-sm-8">
+                <h3 class="signup-title">{{ edit == true ? ' Modify Promotion' : 'Create Promotion'}}</h3>
+                <p class="signup-desc">Fill in the form below with the information of your promotion</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-ticket signup-icon pull-right"></i>
+            </div>
+            <div class="col-sm-12 signup-line"></div>
+        </div>
+
+        <div class="modal-body ng-scope col-sm-12" id="modal-body">
+            <form class="col-sm-12">
+                <div class="form-group">
+                    <label>Promotion Title</label>
+                    <input type="text" class="form-control" placeholder="Enter Title" ng-model="promotionTitle">
+                </div>
+                <div class="form-group container modal-checkbox">
+                    <label>Categories</label>
+                    <div class="col-sm-12 padding-zero">
+                        <div class="col-sm-4">
+                            <input type="radio" ng-model="category" ng-value="0">
+                            <span class="">Footwear</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" ng-model="category" ng-value="1">
+                            <span class="">Electronics</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" ng-model="category" ng-value="2">
+                            <span class="">Jewellery</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" ng-model="category" ng-value="3">
+                            <span class="">Restaurants</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" ng-model="category" ng-value="4">
+                            <span class="">Services</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="radio" ng-model="category" ng-value="5">
+                            <span class="">Apparel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="3" ng-model="promotionDescription"></textarea>
+                </div>
+
+                <label>Promotion Duration</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="sdt" is-open="startDate.opened" datepicker-options="startDateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="openStartDate()"><i class="fa fa-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="input-group">
+                            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="edt" is-open="endDate.opened" datepicker-options="endDateOptions" ng-required="true" close-text="Close" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default" ng-click="openEndDate()"><i class="fa fa-calendar"></i></button>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <label class="padding-zero2">Photo</label>
+                    <small class="form-text text-muted text-m">This will be your promotion cover picture. <u>(Required)</u></small>
+                    <div class="upload-pic">
+                        <div class="fa fa-upload signup-cat-icons icon-signup"></div>
+                        <input type="file" ngf-select ng-model="picFile" accept="image/*" class="btn btn-primary">
+                    </div>
+                    <div class="pull-right" style="margin-top:10px;">
+                        <button class="btn btn-danger" ng-click="saveImage()" ng-show="previewImage && isAddImageBtn" type="button">Add Image to Promotion</button>
+                        <button class="btn btn-danger" ng-click="cropImage()" ng-show="!saveCrop && previewImage" type="button">Crop</button>
+                        <button class="btn btn-danger" ng-click="doneCrop()" ng-show="saveCrop" type="button">Save Crop</button>
+                        <button class="btn btn-danger" ng-click="cancelCrop()" ng-show="saveCrop" type="button">Cancel Crop</button>
+
+                        <div class="dropdown" style="display:inline-block" ng-hide="isCropImageEnable">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" ng-show="previewImage">
+                                {{selectedFilter}}
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Vintage')">Vintage</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Lomo')">Lomo</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Clarity')">Clarity</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('SinCity')">SinCity</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Sunrise')">Sunrise</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('CrossProcess')">Crossprocess</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('OrangePeel')">OrangePeel</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Grungy')">Grungy</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Jarques')">Jarques</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Pinhole')">Pinhole</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('OldBoot')">OldBoot</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('GlowingSun')">GlowingSun</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('HazyDays')">HazyDays</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Nostalgia')">Nostalgia</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Hemingway')">Hemingway</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Concentrate')">Concentrate</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('HerMajesty')">HerMajesty</a></li>
+                                <li><a href="javascript:void(0)" ng-click="applyFilter('Custom Filter')">Custom Filter</a></li>
+
+                            </ul>
+                        </div>
+                        <button class="btn btn-warning" ng-click="resetFilter()" ng-show="isResetEnable && selectedFilter !== 'Custom Filter'" type="button">Reset Filter</button>
+                        <button class="btn btn-success" ng-click="saveFilter()" ng-show="isResetEnable" type="button">Save Filter</button>
+                        <button class="btn btn-danger" ng-click="removeImage()" ng-show="previewImage" type="button">Remove</button>
+                    </div>
+
+
+                    <div ngf-drop ng-model="picFile" ngf-pattern="image/*" class="cropArea">
+                   
+                        <img ngf-src="previewImage" alt="Picture" style="height: 100%;width: auto;background-size: contain;background-repeat: no-repeat;" id="originalImage" class="hide">
+                        <img ngf-src="previewImage" alt="Picture" style="height: 100%;width: auto;background-size: contain;background-repeat: no-repeat;" id="previewImage">
+                    </div>
+                    <div ng-show="isCropImageEnable">
+                        <img ng-show="croppedDataUrl!=null" ng-src="{{croppedDataUrl}}" />
+                    </div>
+                    <div ng-show="isSilderFilterEnable">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>brightness</label>
+                                <rzslider rz-slider-model="brightness.value" rz-slider-options="brightness.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label>contrast</label>
+                                <rzslider rz-slider-model="contrast.value" rz-slider-options="contrast.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label>vibrance</label>
+                                <rzslider rz-slider-model="vibrance.value" rz-slider-options="vibrance.options"></rzslider>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>saturation</label>
+                                <rzslider rz-slider-model="saturation.value" rz-slider-options="saturation.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label>hue</label>
+                                <rzslider rz-slider-model="hue.value" rz-slider-options="hue.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label>exposure</label>
+                                <rzslider rz-slider-model="exposure.value" rz-slider-options="exposure.options"></rzslider>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="">sharpen</label>
+                                <rzslider rz-slider-model="sharpen.value" rz-slider-options="sharpen.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">sepia</label>
+                                <rzslider rz-slider-model="sepia.value" rz-slider-options="sepia.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label>clip</label>
+                                <rzslider rz-slider-model="clip.value" rz-slider-options="clip.options"></rzslider>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>noise</label>
+                                <rzslider rz-slider-model="noise.value" rz-slider-options="noise.options"></rzslider>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">stackblur</label>
+                                <rzslider rz-slider-model="stackblur.value" rz-slider-options="stackblur.options"></rzslider>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="container slider" ng-show="slides.length">
+                        <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage sliderSize"
+                             ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                             ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide}}">
+
+                        <a class="arrow prev" href="javascript:void(0)" ng-click="nextSlide()"></a>
+                        <a class="arrow next" href="javascript:void(0)" ng-click="prevSlide()"></a>
+                        <nav class="sliderNav">
+                            <div class="wrapper">
+                                <ul class="dots">
+                                    <li class="dot" ng-repeat="slide in slides">
+                                        <a href="javascript:void(0)" ng-class="{'active':isCurrentSlideIndex($index)}"
+                                           ng-click="setCurrentSlideIndex($index);"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </form>
+            <div class="col-sm-12" style="margin-top:10px;">
+                <div class="alert alert-warning" role="alert" ng-show="showDateWarning">
+                    <strong>Warning!</strong> Start date cannot start before the end date. <a ng-click="closeWarning(0)" class="close-warning">Close Warning</a>
+                </div>
+                <div class="alert alert-danger" role="alert" ng-show="showTitleWarning">
+                    <strong>Oh snap!</strong> The promotion must have a title <a ng-click="closeWarning(1)" class="close-warning">Close Warning</a>
+                </div>
+                <div class="alert alert-danger" role="alert" ng-show="showDescriptionWarning">
+                    <strong>Oh snap!</strong> The promotion must have a description <a ng-click="closeWarning(2)" class="close-warning">Close Warning</a>
+                </div>
+                <div class="alert alert-danger" role="alert" ng-show="showCategorynWarning">
+                    <strong>Oh snap!</strong> The promotion must have a category <a ng-click="closeWarning(3)" class="close-warning">Close Warning</a>
+                </div>
+                <div class="alert alert-danger" role="alert" ng-show="showImageWarning">
+                    <strong>Oh snap!</strong> The promotion must have a image <a ng-click="closeWarning(4)" class="close-warning">Close Warning</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" type="button" ng-click="cancel()">Cancel</button>
+            <button class="btn btn-primary" type="button" ng-click="ok()">{{ edit == true ? 'Modify' : 'Create'}}</button>
+        </div>
+    </div>
+</div>

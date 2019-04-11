@@ -1,0 +1,47 @@
+﻿<div class="container">
+    <div class="animated fadeIn col-sm-12">
+        <div class="padding-zero2">
+            <div class="panel-body">
+                <div class="div-center">
+                    <button ng-click="showCreatePromotion()" class="btn btn-outline-glimpse" style="margin-top:20px; margin-bottom:20px;">Create New Promotion</button>
+                </div>
+                <table class="table v-promo-t-b">
+                    <thead style="background: #373a3c; color:white;">
+                        <tr>
+                            <th class="border-zero">Promotion</th>
+                            <th class="border-zero">Start Date</th>
+                            <th class="border-zero">End Date</th>
+                            <th class="border-zero">Status</th>
+                            <th class="border-zero">Edit</th>
+                            <th class="border-zero"></th>
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="promotion in mypromotions | reverse | limitTo : 7 : (7 * (currentPage  - 1))">
+                        <tr class="table-row">
+                            <td style="font-weight:600;">{{promotion.Title}}</td>
+                            <td>{{promotion.PromotionStartDate  | date : "yyyy-MM-dd"}}</td>
+                            <td>{{promotion.PromotionEndDate  | date : "yyyy-MM-dd"}}</td>
+                            <td><span ng-show="isPromotionExpired(promotion.PromotionEndDate)" style="color:red;">Expired</span><span ng-hide="isPromotionExpired(promotion.PromotionEndDate)" style="color:green;">Ongoing</span></td>
+                            <td>
+                                <span class="fa fa-edit icon-signup clickable" ng-click="editPromotion(promotion)"></span>
+                                <span class="fa fa-remove icon-signup clickable x-icon" ng-click="removePromotion(promotion, mypromotions.indexOf(promotion))"></span>
+                            </td>
+                            <th>
+                                <button type="button" class="btn btn-outline-info" ng-click="editPromotion(promotion)" ng-show="editOn">Edit</button>
+                                <button type="button" class="btn btn-outline-danger" ng-click="removePromotion(promotion, mypromotions.indexOf(promotion))" ng-show="removeOn">Remove</button>
+                                <button ng-show="isPromotionExpired(promotion.PromotionEndDate)" type="button" class="btn btn-outline-info" ng-click="editPromotionDate(promotion)">Repost</button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-sm-12 padding-zero">
+                    <ul class="pagination pull-right" style="margin-top: 0px;">
+                        <li class="page-item"><div class="page-link table-pages" ng-click="setCurrentPageToPrev()">Previous</div></li>
+                        <li class="page-item" ng-repeat="i in getNumber(maxPage) track by $index" ng-click="setCurrentPage($index + 1)"><div class="page-link table-pages">{{$index + 1}}</div></li>
+                        <li class="page-item"><div class="page-link table-pages" ng-click="setCurrentPageToNext()">Next</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

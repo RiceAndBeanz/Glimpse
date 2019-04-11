@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <base href="/" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="src/css/css.css"/>
+    <link rel="stylesheet" href="~/Content/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/src/css/cropper.min.css" />
+    <link rel="stylesheet" href="Content/angular-block-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="~/src/css/animate.css"/>
+    <link rel="stylesheet" href="~/src/css/slider.css" />
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/src/css/rzslider.min.css" />
+
+
+
+    
+    <!-- Dependency -->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-mocks.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-touch.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="~/Scripts/angular-block-ui.min.js"></script>
+    <script src="~/Scripts/tether.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/ng-map.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="~/Scripts/TweenMax.min.js"></script>
+    <script src="~/Scripts/lodash.min.js"></script>
+    <script src="~/Scripts/angular-local-storage.min.js"></script>
+    <script src="~/Scripts/angular-simple-logger.min.js"></script>
+    <!--<script src="~/Scripts/angular-google-maps.min.js"></script>-->
+    <script src="~/Scripts/ng-file-upload-shim.min.js"></script> <!-- for no html5 browsers support -->
+    <script src="~/Scripts/ng-file-upload.min.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/Chart.min.js"></script>
+    <script src="~/Scripts/angular-chart.min.js"></script>
+    <script src="~/Scripts/caman.full.min.js"></script>
+    <script src="~/Scripts/cropper.min.js"></script>
+    <script src="~/Scripts/rzslider.min.js"></script>
+   <!--<script src="https://maps.google.com/maps/api/js?v=3&key=AIzaSyDCezs9lCKQtmKlP8mm_fBWZt25DlXoUjg"></script>-->
+    <script src="https://maps.google.com/maps/api/js?v=3&key=AIzaSyBPfBp5ilCMRWpYhrLdd3tSVawOEznvDB0"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+        };
+
+        /*$(function () {
+            $.getScript("//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit");
+        });*/
+    </script>
+
+
+    <!-- Controllers -->
+    <script src="src/controllers/homeController.js"></script>
+    <script src="src/controllers/loginController.js"></script>
+    <script src="src/controllers/signupController.js"></script>
+    <script src="src/controllers/promotionController.js"></script>
+    <script src="~/src/controllers/mapController.js"></script>
+    <script src="~/src/controllers/profileController.js"></script>
+    <script src="~/src/controllers/analysisController.js"></script>
+    <script src="~/src/controllers/vendorsPromotionsController.js"></script>
+
+    <!-- Services -->
+    <script src="src/services/dataService.js"></script>
+    <script src="src/services/authenticationService.js"></script>
+    <script src="~/src/services/userService.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="appController">
+    <div>
+        <div ui-view></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<Tests>
+  <Test>
+    <Name>Analysis Controller should have the noPromotionClicked to set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller should have the noPromotionClicked to set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>Analysis Controller,getAllPromotionFromSpecificVendor.query should call the getAllPromotionFromSpecificVendor (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller,getAllPromotionFromSpecificVendor.query should call the getAllPromotionFromSpecificVendor (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>Analysis Controller,getPromotionClicks.query should call the getPromotionClicks (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller,getPromotionClicks.query should call the getPromotionClicks (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>Analysis Controller,getPromotionClicks.query should have the labels to be defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller,getPromotionClicks.query should have the labels to be defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>Analysis Controller,getPromotionClicks.query should have the series to be defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller,getPromotionClicks.query should have the series to be defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>Analysis Controller,getPromotionClicks.query should have the seriesTitle to be defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller,getPromotionClicks.query should have the seriesTitle to be defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>Analysis Controller,getPromotionClicks.query should have the promotionClicks toBeUndefined initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>Analysis Controller,getPromotionClicks.query should have the promotionClicks toBeUndefined initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>DefaultTest Test Variable should be 1 (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>DefaultTest Test Variable should be 1 (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController should test expired date (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController should test expired date (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController should have defined editPromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController should have defined editPromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController should have defined deletePromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController should have defined deletePromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController should call deletePromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController should call deletePromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController should call editPromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController should call editPromotion method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>HomeController Data should be empty initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>HomeController Data should be empty initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,getPromotionImagesFromSpecificPromotion.query should call the getPromotionImagesFromSpecificPromotion (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,getPromotionImagesFromSpecificPromotion.query should call the getPromotionImagesFromSpecificPromotion (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,getPromotionImagesFromSpecificPromotion.query should able to assign image list to promotionImages (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,getPromotionImagesFromSpecificPromotion.query should able to assign image list to promotionImages (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,getPromotionImagesFromSpecificPromotion.query should have length of image 4 (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,getPromotionImagesFromSpecificPromotion.query should have length of image 4 (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Slider Logic should able to set direction right when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Slider Logic should able to set direction right when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Slider Logic should able to set direction left when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Slider Logic should able to set direction left when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Slider Logic should able check whether current index is equal or not (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Slider Logic should able check whether current index is equal or not (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Slider Logic should able navigate to prev image (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Slider Logic should able navigate to prev image (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Slider Logic should able navigate to next image (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Slider Logic should able navigate to next image (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should defined all scope variable should have the promotionImageURL defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should defined all scope variable should have the promotionImageURL defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should defined all scope variable should have the promotionImages defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should defined all scope variable should have the promotionImages defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should defined all scope variable should have the promotionImages defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should defined all scope variable should have the promotionImages defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should defined all scope variable should have the promotionImages defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should defined all scope variable should have the promotionImages defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should defined all scope variable should have the direction defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should defined all scope variable should have the direction defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should defined all scope variable should have the currentIndex defined (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should defined all scope variable should have the currentIndex defined (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should able to set initial scope variable should able to assign promotionImageURL value (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should able to set initial scope variable should able to assign promotionImageURL value (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should able to set initial scope variable should have the promotionImages length 0 (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should able to set initial scope variable should have the promotionImages length 0 (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should able to set initial scope variable should have the images length 1 (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should able to set initial scope variable should have the images length 1 (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should able to set initial scope variable should have the direction default value left (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should able to set initial scope variable should have the direction default value left (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalImageController Controller,Should able to set initial scope variable should have the currentIndex default value (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalImageController Controller,Should able to set initial scope variable should have the currentIndex default value (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>mapController,getPromotions.query should call the getPromotions query method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>mapController,getPromotions.query should call the getPromotions query method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>mapController,getPromotions.query should not call the getPromotions query method when getPromotions return error (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>mapController,getPromotions.query should not call the getPromotions query method when getPromotions return error (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>mapController,getVendors.get should call the getVendors get method when getVendors resolve empty object (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>mapController,getVendors.get should call the getVendors get method when getVendors resolve empty object (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>mapController,getVendors.get should call the getVendors get method when getVendors resolve result object (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>mapController,getVendors.get should call the getVendors get method when getVendors resolve result object (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>mapController,Show PromotionData Modal should call $uibModal.open method when showPromotionData clicked (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>mapController,Show PromotionData Modal should call $uibModal.open method when showPromotionData clicked (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to have default selectedFilter value (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to have default selectedFilter value (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Vintage filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Vintage filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should have slider filter disable when filter applied (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should have slider filter disable when filter applied (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Lomo filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Lomo filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Clarity filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Clarity filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply SinCity filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply SinCity filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Sunrise filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Sunrise filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply CrossProcess filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply CrossProcess filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply OrangePeel filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply OrangePeel filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Grungy filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Grungy filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Jarques filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Jarques filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Pinhole filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Pinhole filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply OldBoot filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply OldBoot filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply GlowingSun filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply GlowingSun filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply HazyDays filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply HazyDays filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Nostalgia filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Nostalgia filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Hemingway filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Hemingway filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply Concentrate filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply Concentrate filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to apply HerMajesty filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to apply HerMajesty filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should have slider filter disable when filter applied (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should have slider filter disable when filter applied (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Filter Logic should able to reset filter (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Filter Logic should able to reset filter (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Slider Logic should able to set direction right when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Slider Logic should able to set direction right when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Slider Logic should able to set direction left when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Slider Logic should able to set direction left when index is lesser then current index (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Slider Logic should able check whether current index is equal or not (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Slider Logic should able check whether current index is equal or not (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Slider Logic should able navigate to prev image (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Slider Logic should able navigate to prev image (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController,Slider Logic should able navigate to next image (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController,Slider Logic should able navigate to next image (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>ProfileController,GetAuthorizeData.query should call the GetAuthorizeData method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>ProfileController,GetAuthorizeData.query should call the GetAuthorizeData method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>ProfileController,getVendors.get should call the getVendors method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>ProfileController,getVendors.get should call the getVendors method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>ProfileController,updateVendorDetails.update should call the getVendors method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>ProfileController,updateVendorDetails.update should call the getVendors method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>ProfileController,initial variable settings of profile controller should have editOn set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>ProfileController,initial variable settings of profile controller should have editOn set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>ProfileController,initial variable settings of profile controller should have editOn set as true when edit method called  (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>ProfileController,initial variable settings of profile controller should have editOn set as true when edit method called  (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController should have the reset filter set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController should have the reset filter set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController should set crop enable as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController should set crop enable as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController should have saveCrop set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController should have saveCrop set as false initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController should be able to call cropImage method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController should be able to call cropImage method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController should have isCropImageEnable and saveCrop disabled when the cancelCrop method is called (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController should have isCropImageEnable and saveCrop disabled when the cancelCrop method is called (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>modalController should have clear image and hide crop preview when the removeImage method is called (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>modalController should have clear image and hide crop preview when the removeImage method is called (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>changeDateModalController should be able to show previous date (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>changeDateModalController should be able to show previous date (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>changeDateModalController should toggle showDateWarning when start date is smaller then end date (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>changeDateModalController should toggle showDateWarning when start date is smaller then end date (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>SignupController should have the user information empty initially (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>SignupController should have the user information empty initially (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>SignupController should initialize the scope value (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>SignupController should initialize the scope value (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should call the GetAuthorizeData method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should call the GetAuthorizeData method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should call the getAllPromotionFromSpecificVendor (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should call the getAllPromotionFromSpecificVendor (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should set the response from the getAllPromotionFromSpecificVendor to $scope.mypromotions (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should set the response from the getAllPromotionFromSpecificVendor to $scope.mypromotions (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should not set the response from the getAllPromotionFromSpecificVendor to $scope.mypromotions (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,getAllPromotionFromSpecificVendor.query should not set the response from the getAllPromotionFromSpecificVendor to $scope.mypromotions (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,In Delete Promotion Test should call the deletePromotion method of dataService (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,In Delete Promotion Test should call the deletePromotion method of dataService (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,In Delete Promotion Test should not delete promotion when dataService.deletePromotion fail (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,In Delete Promotion Test should not delete promotion when dataService.deletePromotion fail (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,In Delete Promotion Test should able to delete promotion from promotion list (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,In Delete Promotion Test should able to delete promotion from promotion list (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,Edit Promotion should call $uibModal.open method (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,Edit Promotion should call $uibModal.open method (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,Show Edit Promotiondate Modal should call $uibModal.open method when editPromotionDate clicked (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,Show Edit Promotiondate Modal should call $uibModal.open method when editPromotionDate clicked (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,Show Edit Promotiondate Modal should call $uibModal.open method with assigend templateUrl and other options (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,Show Edit Promotiondate Modal should call $uibModal.open method with assigend templateUrl and other options (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,Show Edit PromotionDate Modal should call $uibModal.open method when editPromotionDate clicked (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,Show Edit PromotionDate Modal should call $uibModal.open method when editPromotionDate clicked (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,Show Edit PromotionDate Modal should call dataService.updatePromotion when user click okay (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,Show Edit PromotionDate Modal should call dataService.updatePromotion when user click okay (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+  <Test>
+    <Name>vendorsPromotionsController,Show Edit PromotionDate Modal should update promotion date (Chrome 56.0.2924 (Windows 10 0.0.0))</Name>
+    <DisplayName>vendorsPromotionsController,Show Edit PromotionDate Modal should update promotion date (Chrome 56.0.2924 (Windows 10 0.0.0))</DisplayName>
+    <Outcome>Passed</Outcome>
+  </Test>
+</Tests>

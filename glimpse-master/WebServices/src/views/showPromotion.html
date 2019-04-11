@@ -1,0 +1,37 @@
+﻿<div class="animated fadeIn">
+    <div class="modal-content">
+        <div class="modal-body ng-scope" id="modal-body">
+            <form>
+                <div class="form-group">
+                    <div class="col-sm-12 label-categories" ng-switch={{Category}} style="margin-right: 15px;">
+                        <span class="label label-footwear pull-right" ng-switch-when=0>Footwear</span>
+                        <span class="label label-electronics pull-right" ng-switch-when=1>Electronics</span>
+                        <span class="label label-jewellery pull-right" ng-switch-when=2>Jewellery</span>
+                        <span class="label label-restaurants pull-right" ng-switch-when=3>Restaurants</span>
+                        <span class="label label-services pull-right" ng-switch-when=4>Services</span>
+                        <span class="label label-apparel pull-right" ng-switch-when=5>Apparel</span>
+                    </div>
+                    <p class="promotion-map-title col-sm-12">{{Title}}</p>
+                </div>
+                <div class="form-group">
+                    <p class="promotion-map-value">{{Description}}</p>
+                </div>
+                <div class="row">
+                    <p class="promotion-map-value"><span>From</span>: {{PromotionStartDate | date : "fullDate"}}</p>
+                    <p class="promotion-map-value"><span>To</span>: {{PromotionEndDate | date : "fullDate"}}</p>
+                </div>
+                <div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-10 col-offset-1 map-promo-image bkg-white">
+                            <img ng-src="{{previewImage}}" alt="Promotion Picture" class="slide slide-animation nonDraggableImage sliderSize">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal-footer" style="border-top: 0px;">
+            <button class="btn btn-primary" type="button" ng-click="ok()">Okay</button>
+        </div>
+    </div>
+</div>

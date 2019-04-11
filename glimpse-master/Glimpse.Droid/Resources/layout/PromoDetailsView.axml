@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+<!--the height is set in the promodetailsfragment-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            local:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            android:background="@color/white">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/imagesViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true" />
+            <RelativeLayout
+                android:id="@+id/dotsRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/imagesViewPager"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        local:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    local:MvxBind="Text PromotionTitle"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:clickable="false"
+                    android:textColor="#000" />
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/detailViewDuration"
+                android:layout_below="@+id/detailViewTitle"
+                android:gravity="center"
+                android:textColor="#000"
+                local:MvxBind="Text LocationAndDistanceText"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/detailViewDuration1"
+                android:layout_below="@+id/detailViewTitle"
+                android:gravity="center"
+                android:textColor="#000"
+                local:MvxBind="Text StartAndEndDate"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+                <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        local:MvxLang="Text AboutThisDeal"
+                        android:textStyle="bold"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        local:MvxBind="Text PromotionDescription"
+                        android:textColor="#000" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

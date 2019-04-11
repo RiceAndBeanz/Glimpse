@@ -1,0 +1,13 @@
+﻿<div class="container">
+    <div class="map-container animated fadeIn">
+        <div>
+            <ng-map zoom="{{map.zoom}}" center="{{map.center}}" style="height:600px;">
+                <marker ng-repeat="marker in randomMarkers"
+                        position="{{marker.pos}}"
+                        data="{{marker.promotionDetails}}"
+                        on-click="showPromotionData()"
+                        title="{{marker.title}}"></marker>
+            </ng-map>
+        </div>
+    </div>
+</div>

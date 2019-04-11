@@ -1,0 +1,25 @@
+<nav class="navbar navbar-dark  bg-faded nav-bar-background-color">
+    <a class="navbar-brand" href="#">Glimpse</a>
+    <ul class="nav navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" ui-sref=".viewPromotion">Promotions</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" ui-sref=".map">Map</a>
+        </li>
+        <li class="nav-item float-xs-right">
+            <a class="nav-link" ng-click="logout()" href="">Logout</a>
+        </li>
+        <li class="nav-item float-xs-right">
+            <a class="nav-link" ui-sref=".profile">Profile</a>
+        </li>
+        <li class="nav-item float-xs-right">
+            <a class="nav-link" ui-sref=".analysis">Analytics</a>
+        </li>
+        <li class="nav-item float-xs-right">
+            <a class="nav-link" ui-sref=".mypromotions">My Promotions</a>
+        </li>
+    </ul>
+</nav>
+
+<div ui-view></div>

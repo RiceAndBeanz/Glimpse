@@ -1,0 +1,86 @@
+﻿<div class="container">
+    <div class="signup-form-padding animated fadeIn">
+        <div class="" style="padding-bottom: 50px; margin-top: 50px;" ng-hide="noPromotionClicked">
+            <div class="col-sm-6">
+                <div class="page-container">
+                    <div class="panel-shadow">
+                        <table class="table bkg-white">
+                            <thead style="background: #373a3c; color:white;">
+                                <tr>
+                                    <th style="font-weight: 500 !important;">Number of views so far</th>
+                                    <th>
+                                        <ul class="pagination pull-right" style="margin: 0px; height: 26px;">
+                                            <li class="page-item"><div class="page-link table-anal-pages" ng-click="setCurrentPageToPrev()" style="padding: 1px .7rem;"><</div></li>
+                                            <li class="page-item"><div class="page-link table-anal-pages" ng-click="setCurrentPageToNext()" style="padding: 1px .7rem;">></div></li>
+                                        </ul>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody ng-repeat="promotion in promotions | reverse | limitTo : 7 : (7 * (currentPage  - 1))">
+                                <tr class="table-row">
+                                    <td>{{promotion.Title}}</td>
+                                    <td>{{promotion.clicks}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="v-promo-t-b a-panel">
+                    <div class="chart-title">Number of views during the past few day</div>
+                    <div class="bkg-white panel-shadow">
+                        <canvas id="line" class="chart chart-line" chart-data="data"
+                                chart-labels="labels" chart-series="seriesTitle" chart-options="chartLineDatesOptions"
+                                chart-colors="colors" chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+                        <div class="chart-x-axis-dark-gray">Days of the month</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 a-panel">
+                <div class="v-promo-t-b">
+                    <div class="chart-title">Total number of views</div>
+                    <div class="bkg-white col-sm-12 text-center panel-shadow" ">
+                        <span class="fa fa-line-chart icon-signup analytics-chart-icon"></span>
+                        <span class="analytics-solo-info">{{totalSum}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 a-panel">
+                <div class="v-promo-t-b">
+                    <div class="chart-title">Total number of views today</div>
+                    <div class="bkg-white col-sm-12 text-center panel-shadow" ">
+                        <span class="fa fa-bar-chart icon-signup analytics-chart-icon"></span>
+                        <span class="analytics-solo-info">{{todaySum}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 a-panel">
+                <div class="v-promo-t-b">
+                    <div class="chart-title">Number of views based on the day of the week</div>
+                    <div class="bkg-white panel-shadow">
+                        <canvas id="line" class="chart chart-line" chart-data="dataDays"
+                                chart-labels="labelDays" chart-series="seriesTitle" chart-options="chartLineDaysOptions"
+                                chart-colors="colors" chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+                        <div class="chart-x-axis-dark-gray">Day of the week</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 a-panel">
+                <div class="v-promo-t-b">
+                    <div class="chart-title">Number of views based on the time of the day</div>
+                    <div class="bkg-white panel-shadow" ">
+                        <canvas id="line" class="chart chart-line" chart-data="dataHours"
+                                chart-labels="labelHours" chart-series="seriesTitle" chart-options="chartLineDaysOptions"
+                                chart-colors="colors" chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+                        <div class="chart-x-axis-dark-gray">Time of the day</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div ng-show="noPromotionClicked" class="col-sm-12">
+            <div class="alert alert-warning text-center" role="alert">
+                <strong>Sorry!</strong> You do not have any promotions or no one clicked on your promotion yet.. Give it a little time!
+            </div>
+        </div>
+    </div>
+</div>

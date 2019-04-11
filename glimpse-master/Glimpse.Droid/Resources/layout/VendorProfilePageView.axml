@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="100"
+            android:background="@color/glimpseColor" />
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop" />
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@color/glimpseColor"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:text="Company Name"
+                local:MvxBind="Text CompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:textColor="#fff"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <Button
+                android:id="@+id/angry_btn"
+                android:text="Create Promotion"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_shape_button_v2"
+                local:MvxBind="Click ShowCreatePromotionView"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp" />
+            <LinearLayout
+                android:id="@+id/promotionbar"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <View
+                    android:id="@+id/view5"
+                    android:background="@color/black"
+                    android:layout_height="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp" />
+                <TextView
+                    android:id="@+id/promotions"
+                    android:textSize="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:textStyle="normal"
+                    android:layout_alignParentRight="true"
+                    local:MvxLang="Text MyPromotions"
+                    android:text="My Promotions"
+                    android:layout_gravity="center" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:id="@+id/view6"
+                    android:background="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+            <Mvx.MvxListView
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                local:MvxBind="ItemsSource PromotionList"
+                local:MvxItemTemplate="@layout/promotionitemtemplate"
+                android:layout_width="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
